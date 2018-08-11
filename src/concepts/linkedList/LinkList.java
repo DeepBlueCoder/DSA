@@ -93,12 +93,47 @@ public class LinkList
 
     }
 
-    // Test comment update
+    public void nthNodeFromEnd(int n)
+    {
+	Node temp, temp2;
+	int count = 0;
+
+	temp = temp2 = this.head;
+
+	while (count != n - 1)
+	{
+	    temp2 = temp2.next;
+	    count++;
+	}
+
+	while (temp2.next != null)
+	{
+	    temp2 = temp2.next;
+	    temp = temp.next;
+	}
+
+	System.out.println(temp.data);
+    }
+    
+    public void middleElement()
+    {
+	Node temp, temp2;
+	temp = temp2 = this.head;
+	
+	while(temp2.next!=null)
+	{
+	    temp=temp.next;
+	    temp2=temp2.next.next;
+	}
+	
+	System.out.println(temp.data);
+    }
+
+    // To be coded
     public void deleteElement(Node node)
     {
 	Node temp = this.head;
-	
-	
+
     }
 
 }
