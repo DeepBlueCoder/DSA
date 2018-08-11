@@ -93,6 +93,13 @@ public class LinkList
 
     }
 
+    // To be coded
+    public void deleteElement(Node node)
+    {
+	Node temp = this.head;
+
+    }
+
     public void nthNodeFromEnd(int n)
     {
 	Node temp, temp2;
@@ -114,26 +121,26 @@ public class LinkList
 
 	System.out.println(temp.data);
     }
-    
+
     public void middleElement()
     {
 	Node temp, temp2;
 	temp = temp2 = this.head;
-	
-	while(temp2.next!=null)
+
+	while (temp2.next != null)
 	{
-	    temp=temp.next;
-	    temp2=temp2.next.next;
+	    temp = temp.next;
+	    temp2 = temp2.next.next;
 	}
-	
+
 	System.out.println(temp.data);
     }
 
-    // To be coded
-    public void deleteElement(Node node)
+    public void listReversal()
     {
 	Node temp = this.head;
-
+	
+	
     }
 
 }
