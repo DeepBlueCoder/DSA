@@ -1,8 +1,13 @@
 package concepts.linkedList;
 
-public class LinkList
+public class LinkedList
 {
 	private Node head;
+
+	public void setHead(Node head)
+	{
+		this.head = head;
+	}
 
 	public Node getHead()
 	{
@@ -101,7 +106,7 @@ public class LinkList
 
 	}
 
-	public void nthNodeFromEnd(int n)
+	public int nthNodeFromEnd(int n)
 	{
 		Node temp, temp2;
 		int count = 0;
@@ -120,7 +125,9 @@ public class LinkList
 			temp = temp.next;
 		}
 
-		System.out.println(temp.data);
+//		System.out.println(temp.data);
+		
+		return temp.data;
 	}
 
 	public void middleElement()
