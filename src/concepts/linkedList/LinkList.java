@@ -93,7 +93,7 @@ public class LinkList
 
     }
 
-    // Test comment
+    // Test comment update
     public void deleteElement(Node node)
     {
 	Node temp = this.head;
