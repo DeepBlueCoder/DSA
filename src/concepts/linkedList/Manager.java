@@ -12,7 +12,7 @@ public class Manager
 	list.insertAtTail(30);
 	list.insertAtTail(40);
 	list.insertAtTail(50);
-	list.insertAtTail(60);
+//	list.insertAtTail(60);
 
 	System.out.println();
 	System.out.println(list.sizeOfLinkList());
